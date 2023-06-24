@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+* {
+    background-color: #222226;
+    color: white;
+    font-family: 'Caprasimo', cursive;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    transition: 200ms;
+}
+
+nav img {
+    border-radius: 60px;
+}
