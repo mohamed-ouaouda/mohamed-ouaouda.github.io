@@ -6,6 +6,19 @@
     font-family: 'Caprasimo', cursive;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: #5c2a9d;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #b5076b;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -32,4 +45,12 @@ nav ul li a:hover {
 
 nav img {
     border-radius: 60px;
+}
+
+.privacy {
+    font-size: small;
+    color: white;
+    padding-left: 10px;
+    line-height: 3;
+    line-break: 2px;
 }
