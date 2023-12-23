@@ -3,11 +3,8 @@
 <script type="text/javascript" src="https://ZulNs.github.io/libs/calendar.js"></script>
 <div id="calendar-converter"></div>
 <script type="text/javascript">
-    var cal1 = new Calendar(false, 1, false, true),
-        cal2 = new Calendar(true, 0, false, true),
-        cal1Mode = cal1.isHijriMode(),
+    var cal2 = new Calendar(true, 0, false, true),
         cal2Mode = cal2.isHijriMode();
-    document.getElementById('calendar-converter').appendChild(cal1.getElement());
     document.getElementById('calendar-converter').appendChild(cal2.getElement());
     cal1.setDisplayStyle('inline-block');
     cal2.setDisplayStyle('inline-block');
