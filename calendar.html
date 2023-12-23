@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://ZulNs.github.io/libs/calendar.css"/>
+<script type="text/javascript" src="https://ZulNs.github.io/libs/hijri-date.js"></script>
+<script type="text/javascript" src="https://ZulNs.github.io/libs/calendar.js"></script>
+<div id="calendar"><input id="show-button" type="button" onclick="showMe();" value="Show Calendar" /></div>
+<script type="text/javascript">
+    var showBtn = document.getElementById('show-button'),
+        cal = new Calendar();
+    document.getElementById('calendar').appendChild(cal.getElement());
+    showMe();
+
+    cal.onHide = function() {
+        showBtn.style.display = 'block'
+    };
+
+    function showMe() {
+        showBtn.style.display = 'none';
+        cal.show();
+    }
+</script>
